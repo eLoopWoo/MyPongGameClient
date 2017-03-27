@@ -68,6 +68,7 @@ Client::Client(std::string IP, int PORT)
 		exit(0);
 	}
 
+
 	addr.sin_addr.s_addr = inet_addr(IP.c_str()); //Address (127.0.0.1) = localhost (this pc)
 	addr.sin_port = htons(PORT); //Port 
 	addr.sin_family = AF_INET; //IPv4 Socket
